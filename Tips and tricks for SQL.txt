@@ -1,0 +1,4 @@
+--
+select SV.*  , K.MaKhoa , K.TenKhoa 
+From(SINHVIEN SV inner join LOP L on SV.MaLop=L.MaLop)
+inner join KHOA K on L.MaKhoa=K.MaKhoa
